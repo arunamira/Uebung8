@@ -6,8 +6,10 @@ System.out.print(shortenToLowerCase("RindfLeischetikeTTierung", 13));
 }
 	
 public static String shortenToLowerCase(String input, int shortenBy) {
+	if(input.length() > shortenBy) {
+		return input.toLowerCase().substring(0, (input.length()-shortenBy));
+	} else { return "";}
 	
-	return input.toLowerCase().substring(0, (input.length()-shortenBy));
 }
 
 }
